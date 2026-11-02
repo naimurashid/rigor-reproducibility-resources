@@ -1,0 +1,22 @@
+mouse_id,group,date_day0,day,tumor_volume_mm3,marker_gene,excluded,missing_reason,note
+M01,Control,2025-03-04,0,12.3,TP53,FALSE,,
+M01,Control,2025-03-04,7,45.1,TP53,FALSE,,
+M01,Control,2025-03-04,14,130.2,TP53,FALSE,,
+M02,Control,2025-03-04,0,11.8,MYC,FALSE,,re-measured
+M02,Control,2025-03-04,7,50.4,MYC,FALSE,,re-measured
+M02,Control,2025-03-04,14,141.9,MYC,FALSE,,re-measured
+M03,Control,2025-03-04,0,,KRAS,FALSE,blank_reason_unknown,found dead before d14
+M03,Control,2025-03-04,7,38,KRAS,FALSE,,found dead before d14
+M03,Control,2025-03-04,14,,KRAS,FALSE,died,found dead before d14
+M04,Treated,2025-03-04,0,13,SEPT2,TRUE,,bad injection?
+M04,Treated,2025-03-04,7,20.2,SEPT2,TRUE,,bad injection?
+M04,Treated,2025-03-04,14,22.5,SEPT2,TRUE,,bad injection?
+M05,Treated,2025-03-04,0,12.1,KRAS,FALSE,,
+M05,Treated,2025-03-04,7,18.9,KRAS,FALSE,,
+M05,Treated,2025-03-04,14,,KRAS,FALSE,blank_reason_unknown,
+M06,Treated,2025-03-05,0,10.9,MYC,FALSE,,dose 2x?
+M06,Treated,2025-03-05,7,15.6,MYC,FALSE,,dose 2x?
+M06,Treated,2025-03-05,14,19.8,MYC,FALSE,,dose 2x?
+M07,Treated,2025-03-05,0,,TP53,FALSE,blank_reason_unknown,
+M07,Treated,2025-03-05,7,17.2,TP53,FALSE,,
+M07,Treated,2025-03-05,14,24,TP53,FALSE,,

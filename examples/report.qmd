@@ -1,0 +1,21 @@
+---
+title: "Tumor volume by group"
+format: html
+---
+
+```{r}
+library(data.table)
+tidy <- fread("tidy-sheet.csv")[excluded == FALSE & !is.na(tumor_volume_mm3)]
+```
+
+Excluded mice and blank volumes are left out. The reasons are in `recipe.R`.
+
+```{r}
+#| fig-cap: "Tumor volume by group, all days pooled."
+boxplot(tumor_volume_mm3 ~ group, data = tidy, ylab = "Volume (mm3)", xlab = "")
+stripchart(tumor_volume_mm3 ~ group, data = tidy, vertical = TRUE, method = "jitter", add = TRUE, pch = 16)
+```
+
+```{r}
+knitr::kable(tidy[, .(n = .N, mean_mm3 = round(mean(tumor_volume_mm3), 1), sd_mm3 = round(sd(tumor_volume_mm3), 1)), by = .(group, day)])
+```
